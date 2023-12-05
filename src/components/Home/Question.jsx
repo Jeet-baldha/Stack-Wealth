@@ -12,7 +12,7 @@ export default function Question(props){
         borderRadius:'50%',
         backgroundColor:'#f2f2f2',
         fontSize:'25px',
-        transform: selected &&  'rotate(-180deg)',
+        transform: selected ? 'rotate(0deg)' : 'rotate(-180deg)',
     }
 
     return (
@@ -20,10 +20,10 @@ export default function Question(props){
             <div style={{
                 display:'flex',
                 width: '100%',
-                paddingBottom:selected ? '10px' : '0px',
+                paddingTop:'10px',
                 justifyContent:'space-between',
             }}>
-                <h3 style={{fontSize:'16px'}}>{props.questionTxt}</h3>
+                <h3 style={{fontSize:'16px',fontWeight:'500'}}>{props.questionTxt}</h3>
                 <IconButton  onClick={() => {
                         setSelected(!selected);
                     }}>

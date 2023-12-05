@@ -22,6 +22,7 @@ body{
     font-size: 18px;
     padding: 0 120px;
     position: fixed;
+    z-index: 1111;
 }
 
 .navbar a{
@@ -190,18 +191,17 @@ background-image: url("https://www.transparenttextures.com/patterns/cartographer
 
 .help-section{
     display: grid;
-    gap: 70px;
+    gap: 60px;
     grid-template-columns: 1fr 1fr;
     padding: 120px 100px;
 }
 
 .export-card{
     display: grid;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin-top: 50px;
     grid-template-columns: 1fr 2fr;
     width: 100%;
-   
     min-width: 300px;
     align-items: center;
     border-radius: 15px;
@@ -218,18 +218,19 @@ background-image: url("https://www.transparenttextures.com/patterns/axiom-patter
 
 .question-box{
     width: 500px;
-    margin-top: 50px;
+    margin: 50px 0 20px 0;
     background-color: #1C1C1C;
     padding:20px;
     border-radius: 10px;
-    max-height: 450px;
+    max-height: 430px;
     overflow-y: auto;
+
 }
 
 .ans-box{
     font-weight: 200;
     transition: 0.5s;
-    margin: 10px 0;
+    margin: 10px 0 10px 0;
     text-align: justify;
     font-size: 15px;
 }
@@ -248,5 +249,42 @@ background-image: url("https://www.transparenttextures.com/patterns/axiom-patter
     background-color: #f2f2f2cd;
   }
 
+  .divider{
+    width: 100%;
+    background-color: #888;
+    margin-top: 10px !important;
+  }
+  .faq-btn{
+    margin-top: 20px !important;
+  }
 
+  .rewards-line-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #1C1C1C;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    border-radius: 8px;
+  }
+
+  .rewards-line-box img{
+    width:200px;
+  }
+
+  .safety-message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    width: 100%;
+  }
+.safety-message img{
+    width: 200px;
+}
+
+.safety-message h3{
+    width: 35%;
+}
 
