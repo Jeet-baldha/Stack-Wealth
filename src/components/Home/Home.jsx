@@ -5,6 +5,7 @@ import Strategies from "./Strategies";
 import HelpSection from "./HelpSection";
 import { IconButton } from "@mui/material";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';  
+import Footer from "../Footer";
 
 
 export default function Home(){
@@ -31,6 +32,8 @@ export default function Home(){
             <img src="../static/image/secure.png" alt= "" />
             <h3> your data is 100% secure. we don't share your information with any third party.</h3>
         </div>
+        
 
+        <Footer />
     </div>)
 }

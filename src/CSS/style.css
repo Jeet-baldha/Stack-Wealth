@@ -288,3 +288,38 @@ background-image: url("https://www.transparenttextures.com/patterns/axiom-patter
     width: 35%;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 100px;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 22px;
+    height: 300px;
+}
+
+.footer-col img{
+    width: 150px;
+    padding-bottom: 10px;
+}
+
+.footer-social-icon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-col a{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.footer-col li{
+    list-style-type: none;
+}
+

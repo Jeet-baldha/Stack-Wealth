@@ -32,7 +32,7 @@ export default function HelpSection(){
             
             <Question questionTxt="How does inflation impact purchasing power and long-term financial planning?" answerText="Inflation erodes purchasing power. Long-term plans should consider investments like stocks to outpace inflation and regular adjustments." />
         </div>
-        <Button text="view all FAQs"/>
+            <Button text="view all FAQs"/>
         </div>
         </div>
         
