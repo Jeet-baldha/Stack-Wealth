@@ -1,11 +1,9 @@
 import './CSS/style.css';
-import Navbar from './components/Navbar/Navbar'
-import Home from './components/Home/Home';
+import Calculator from './components/SipCalculator/Calculator';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+      <Calculator />
     </div>
   );
 }

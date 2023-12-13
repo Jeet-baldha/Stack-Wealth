@@ -7,6 +7,7 @@ export default function LeftNav(){
     <div className="left-nav">
         <ul>
             <li><a href="#"><img className="stack-logo" src="https://webstatic.stackfinance.co/website-v4/stack-logo.webp" /></a></li>
+            <li><a href="#">Calculator</a></li>
         </ul>
     </div>
     )
