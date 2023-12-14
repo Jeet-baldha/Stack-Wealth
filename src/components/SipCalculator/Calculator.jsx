@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Slider from '@mui/material/Slider';
 import MuiInput from '@mui/material/Input';
-export default function Calculator() {
+import CloseIcon from '@mui/icons-material/Close';
+import { IconButton } from "@mui/material";
+
+export default function Calculator(props) {
 
     const [totalValue, setTotalValue] = useState(0);
     const [interstRate, setInterstrate] = useState(5);
@@ -52,9 +55,16 @@ export default function Calculator() {
         calculateInvestment();
     };
 
+    function closeDisplay(){
+        props.setCalcDisplay(false);
+    }
 
+    
     return (
-        <div className="sip-calculator">
+        <div className="sip-calculator" style={props.stl}>
+        <div className="closeBtn"> 
+        <IconButton onClick={closeDisplay} ><CloseIcon style={{color:'white'}}></CloseIcon></IconButton>
+        </div>
             <div className="investment">
                 <span>monthly investment (₹)</span>
                 <MuiInput
@@ -77,7 +87,7 @@ export default function Calculator() {
             <div className="interstRate">
                 <span>expected return rate (% p.a)</span>
                 <MuiInput
-                    style={{ color: '#f2f2f2' }}
+                    style={{ color: '#f2f2f2',display:'inline-block' }}
                     className="calcInput"
                     value={interstRate}
                     size="small"
